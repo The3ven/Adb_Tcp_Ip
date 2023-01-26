@@ -6,7 +6,7 @@
 
 $DownloadURL = 'https://raw.githubusercontent.com/The3ven/Adb_Tcp_Ip/main/adb_tcp_ip.bat'
 
-$FilePath = "$env:TEMP\ATI"
+$FilePath = "$env:TEMP\adb_tcp_ip.cmd"
 $ScriptArgs = "$args "
 
 try {
