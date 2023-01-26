@@ -1,9 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 setlocal EnableExtensions
-set var=%0
-set Var=%var:~0,-4%
-title %Var%
+set Script_Name=%0
+set Script_Name=%Script_Name:~0,-4%
+title %Script_Name%
 echo Searching for Adb devices
 adb devices -l | findstr "product"> nul
 if errorlevel 1 (
@@ -25,3 +25,4 @@ goto End
 
 :End
 echo Thanks for using %Script_Name%
+pause
